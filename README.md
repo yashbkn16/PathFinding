@@ -2,8 +2,6 @@
 
 Welcome to path visualizer.
 
-You can find it here: 
-
 ## Algorithms
 
 It supports the follwing algorithms:
