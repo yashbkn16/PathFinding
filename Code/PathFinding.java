@@ -509,15 +509,15 @@ public class PathFinding {
 				}
 				int hops = priority.get(0).getHops() + 1; // INCREMENT THE HOPS VARIABLE
 				ArrayList<Node> explored = exploreNeighbors(priority.get(0), hops); // CREATE AN ARRAYLIST OF NODES THAT
-																					// WERE EXPLORED
+												    // WERE EXPLORED
+				priority.remove(0);	// REMOVE THE NODE FROM THE QUE
 				if (explored.size() > 0) {
-					priority.remove(0); // REMOVE THE NODE FROM THE QUE
+					// IF NODES WERE EXPLORED
 					priority.addAll(explored); // ADD ALL THE NEW NODES TO THE QUE
 					Update();
 					delay();
-				} else { // IF NO NODES WERE EXPLORED THEN JUST REMOVE THE NODE FROM THE QUE
-					priority.remove(0);
-				}
+				} 
+				
 			}
 		}
 
