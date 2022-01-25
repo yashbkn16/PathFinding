@@ -1,6 +1,6 @@
 # PathFinding
 
-**Welcome to path visualizer.**
+**Welcome to Path Visualizer.**
 ###
 This program provides a visual demonstration of the process undergone by Dijkstra and A* (A star)
 
